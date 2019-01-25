@@ -1,0 +1,366 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.846;
+  color: #666666;
+  letter-spacing: .1px;
+  background: #e7ecef;
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+*{
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p{
+  margin: 1em 0 1em;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+nav{
+  margin-bottom: 30px;
+  background: #6096ba;
+}
+.nav-list {
+ margin: 0;
+ padding-left: 0;
+ list-style: none;
+}
+.nav-list > li {
+ position: relative;
+ display: block;
+}
+.nav-list > li.logo {
+ padding: 10px;
+}
+.nav-list > li > a {
+ position: relative;
+ display: block;
+}
+.nav-list > li > img {
+  width: 100px;
+  margin: 0px 20px 0px 0px;
+  float: left;
+}
+.nav-list > li > span {
+ color: #fff;
+}
+.nav-list.flexStart {
+ padding-left: 45px;
+}
+
+.nav-list.flexEnd {
+ padding-right: 45px;
+}
+
+.nav-list > li > a:hover,
+.nav-list > li > a:focus {
+ text-decoration: none;
+ box-shadow: inset 0 -4px 0 0 #74af2a;
+}
+
+@font-face {
+ font-family: 'Glyphicons Halflings';
+ src: url('../fonts/glyphicons-halflings-regular.eot');
+ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+ position: relative;
+ display: inline-block;
+ font-family: 'Glyphicons Halflings';
+ font-style: normal;
+ font-weight: normal;
+ line-height: 1;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-remove:before {
+ content: "\e014";
+ line-height: 26px;
+}
+
+h1, h2, h3, h4{
+ font-family: inherit;
+ font-weight: 400;
+ line-height: 1.1;
+ margin: 0px;
+ color: #444444;
+}
+h4{
+ font-size: 24px;
+}
+
+article{
+  max-width: 1000px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.imgLink, .dialog_content > img{
+  object-fit: cover;
+  height: 90%;
+  width: 100%;
+}
+.imgLink_desc{
+  line-height: 11px;
+  color:#74af2a;
+}
+
+.message{
+  background: #E3E3E3;
+  margin: 30px 0px;
+  text-align: left;
+  padding: 10px;
+}
+.buttonClose, .ui-button {
+  width: 26px;
+  border-radius: 50%;
+  background: #333;
+  text-align: center;
+  color: #fff;
+}
+.buttonClose:hover, .ui-button {
+  background: #efefef;
+  text-align: center;
+  color: #333;
+  cursor: pointer;
+  border: 0px;
+  box-shadow: 0px 0px 1px #333;
+}
+.flexContainer {
+  display: flex;
+}
+.flexItem {
+  flex: 1;
+}
+.flexStart {
+  justify-content: flex-start;
+}
+.flexEnd {
+  justify-content: flex-end;
+}
+.nav-list {
+  list-style: none;
+}
+.nav-list a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: white;
+}
+
+.flexCenter {
+  justify-content: center;
+}
+.flexSpaceAround {
+  justify-content: space-around;
+}
+.subContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+.row{
+  height: 200px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row:before, .row:after{
+  content: " ";
+  display: table;
+}
+.col {
+  width: 32%;
+  height: 190px;
+  border: 1px solid #E3E3E3;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: left;
+  transition:all 0.3s ease;
+}
+.col-imgLink:hover {
+  border: 1px solid #E3E3E3;
+  box-shadow: 0 3px 15px rgba(0,0,0,.14);
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+footer{
+  margin-top: 20px;
+  background: #274c77;
+  color: #fff;
+}
+footer .col{
+  width: 20%;
+  height: auto;
+  border: 0px;
+  background: transparent;
+}
+footer h4{
+  color: #fff;
+}
+
+#dialog, .ui-dialog-titlebar > .ui-button > .ui-button-text{
+  display: none;
+}
+.ui-dialog{
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  left: 0;
+  top: 0;
+}
+
+.ui-dialog-titlebar{
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+    width: 100%;
+    padding: 10px 45px;
+}
+
+.ui-dialog-titlebar > .ui-button{
+    float: right;
+    padding: 0;
+}
+
+@media only screen and (min-width: 35em) {
+    .nav-list{display:inherit;}
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.nav-list{display:inherit;}
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .nav-list.flexEnd, .nav-list.flexStart{padding: 10px;}
+  .nav-list,.flexContainer{display:block;}
+  .row{height:auto;margin-left: 20px;
+margin-right: 20px;}
+  .col{width: 100%;}
+  footer .col{width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h1,
+    h4 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h1,
+    h4 {
+        page-break-after: avoid;
+    }
+}
