@@ -9,7 +9,7 @@ body{
   line-height: 1.846;
   color: #666666;
   letter-spacing: .1px;
-  background: #e7ecef;
+  background: #274c77;
 }
 ::-moz-selection {
     background: #b3d4fc;
@@ -40,7 +40,9 @@ p{
     color: #000;
     padding: 0.2em 0;
 }
-
+main{
+  background:  #e7ecef;
+}
 nav{
   margin-bottom: 30px;
   background: #6096ba;
@@ -212,8 +214,8 @@ article{
 }
 footer{
   margin-top: 20px;
-  background: #274c77;
   color: #fff;
+  background: #274c77;
 }
 footer .col{
   width: 20%;
@@ -247,47 +249,11 @@ footer h4{
     padding: 0;
 }
 
-@media only screen and (min-width: 35em) {
-    .nav-list{display:inherit;}
-}
-
-/*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
 @media (min-width: 768px) and (max-width: 1024px) {
 
 .nav-list{display:inherit;}
 
 }
-
-/*
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-  //CSS
-
-}
-
-/*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-
-  //CSS
-
-}
-
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
 
 @media (min-width: 320px) and (max-width: 480px) {
   .nav-list.flexEnd, .nav-list.flexStart{padding: 10px;}
@@ -297,20 +263,6 @@ margin-right: 20px;}
   .col{width: 100%;}
   footer .col{width: 100%;}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
